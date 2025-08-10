@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Analog Clock with Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock" id="clockFace">
+            <span class="circle" id="sc" style="--clr:#04fc43;"><i></i></span>
+            <span class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></span>		
+            <span class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></span>		
+            
+            <span style="--1:1;"><b>1</b></span>
+            <span style="--1:2;"><b>2</b></span>
+            <span style="--1:3;"><b>3</b></span>
+            <span style="--1:4;"><b>4</b></span>
+            <span style="--1:5;"><b>5</b></span>
+            <span style="--1:6;"><b>6</b></span>
+            <span style="--1:7;"><b>7</b></span>
+            <span style="--1:8;"><b>8</b></span>
+            <span style="--1:9;"><b>9</b></span>
+            <span style="--1:10;"><b>10</b></span>
+            <span style="--1:11;"><b>11</b></span>									
+            <span style="--1:12;"><b>12</b></span>
+        </div>
+
+        <div id="time">
+            <div id="hours" style="--clr:#ff2972;">00</div>
+            <div id="minutes" style="--clr:#fee800;">00</div>
+            <div id="seconds" style="--clr:#04fc43;">00</div>
+            <div id="ampm">AM</div>
+        </div>
+
+        <div class="alarm-status" id="alarmStatus">
+            5-Minute Interval Alarm: Ready
+        </div>
+
+        <div class="controls">
+            <button id="testAlarmBtn" class="test-btn">Test Alarm Sound</button>
+            <button id="toggleAlarmBtn" class="toggle-btn">Disable Alarm</button>
+        </div>
+    </div>
+
+    <!-- Multiple audio sources for better compatibility -->
+    <audio id="alarmBeep" preload="auto">
+        <source src="data:audio/wav;base64,UklGRhYBAABXQVZFZm10IBAAAAABAAEAgD4AAIA+AAABAAgAZGF0YfIAAACAhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvGIaBDqM0fLNeSsF" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
